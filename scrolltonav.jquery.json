@@ -1,0 +1,33 @@
+{
+    "name": "scrolltonav",
+    "title": "Jquery ScrollToNav",
+    "description": "Scroll To  naviguation and highlight on current nav section. ",
+    "keywords": [
+        "scrollToNav, scrollto"
+    ],
+    "version": "0.0.1",
+    "author": {
+        "name": "Etienne Dion",
+        "url": "http://www.etiennedion.com"
+    },
+    "maintainers": [
+        {
+            "name": "Etienne Dion",
+            "email": "dionetienne@gmail.com",
+            "url": "http://www.etiennedion.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/EtienneDion/scrolltonav.jquery.js/blob/master/LICENSE-MIT.txt"
+        }
+    ],
+    "bugs": "https://github.com/EtienneDion/scrolltonav.jquery.js/issues",
+    "homepage": "https://github.com/EtienneDion/scrolltonav.jquery.js",
+    "docs": "https://github.com/EtienneDion/scrolltonav.jquery.js",
+    "download": "https://github.com/EtienneDion/scrolltonav.jquery.js",
+    "dependencies": {
+        "jquery": ">=1.8"
+    }
+}

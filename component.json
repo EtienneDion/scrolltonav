@@ -1,0 +1,10 @@
+{
+  "name": "scrolltonav.jquery.js",
+  "version": "0.0.1",
+  "main": [
+    "scrolltonav.jquery.js"
+  ],
+  "dependencies": {
+    "jquery": ">=1.8"
+  }
+}
