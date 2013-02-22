@@ -1,6 +1,6 @@
 ﻿
 
-//  Jquery ScrollToNav v.0.0.3
+//  Jquery ScrollToNav v.0.0.4
 // @Author Etienne Dion
 
 
