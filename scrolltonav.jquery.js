@@ -1,6 +1,6 @@
 ﻿
 
-//  Jquery ScrollToNav v.0.0.6
+//  Jquery ScrollToNav v.0.0.7
 // @Author Etienne Dion
 
 
@@ -111,6 +111,6 @@ jQuery.extend( jQuery.easing,
 				return (a[p] < b[p]) ? 1 : (a[p] > b[p]) ? -1 : 0;
 			});
 		}
-	
+	}	
 
 })(jQuery);
