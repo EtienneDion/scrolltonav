@@ -1,6 +1,6 @@
 ﻿
 
-//  Jquery ScrollToNav v.0.0.7
+//  Jquery ScrollToNav v.0.0.8
 // @Author Etienne Dion
 
 
@@ -41,6 +41,7 @@ jQuery.extend( jQuery.easing,
 
 (function($){
     $.fn.scrollToNav = function( options ){
+
 
         var settings = {
             anchorsSelector:"nav a"
@@ -83,13 +84,19 @@ jQuery.extend( jQuery.easing,
 					var position = $($(this).attr('href')).offset().top;
 					anchorPos.push({ index:index, position:position });
 				});
-				
+
 				anchorPos = sortByProp(anchorPos, "position");
-				
+
 				var currentPos = 0;
 				$.each(anchorPos, function(i){
-					if(currentScroll >= anchorPos[i].position-200 && currentScroll <= anchorPos[i+1].position){
-						currentPos = anchorPos[i].index;
+
+					if(currentScroll >= anchorPos[i].position-200){
+						if(anchorPos[i+1] !== undefined){
+                            if(currentScroll <= anchorPos[i+1].position){
+                                currentPos = anchorPos[i].index;
+                            }
+                        }
+
 					}
 					if(currentScroll > anchorPos[anchorPos.length-1].position-200){
 						currentPos = anchorPos[anchorPos.length-1].index;
@@ -108,7 +115,7 @@ jQuery.extend( jQuery.easing,
 		//sort Array By Property
 		function sortByProp(array, p){
 			return array.sort(function(a,b){
-				return (a[p] < b[p]) ? 1 : (a[p] > b[p]) ? -1 : 0;
+				return (a[p] > b[p]) ? 1 : (a[p] < b[p]) ? -1 : 0;
 			});
 		}
 	}	
