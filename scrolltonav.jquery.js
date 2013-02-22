@@ -1,6 +1,6 @@
 ﻿
 
-//  Jquery ScrollToNav v.0.0.5
+//  Jquery ScrollToNav v.0.0.6
 // @Author Etienne Dion
 
 
@@ -84,7 +84,7 @@ jQuery.extend( jQuery.easing,
 					anchorPos.push({ index:index, position:position });
 				});
 				
-				anchorPos = sortByProp(anchorPos, "index");
+				anchorPos = sortByProp(anchorPos, "position");
 				
 				var currentPos = 0;
 				$.each(anchorPos, function(i){
